@@ -25,8 +25,11 @@ int main() {
     printf("\njumlah elemen di L1: %d\n", countList(L1));
     
     copyListL1toL2(L1, &L2);
-    descendingNilai(&L2);
     printf("\nlist L2 setelah melakukan copy dari L1 (hanya nilai > 70): \n");
+    printList(L2);
+
+    descendingNilai(&L2);
+    printf("\nlist L2 setelah sorting decending berdasarkan nilai (hanya nilai > 70): \n");
     printList(L2);
 
     deleteDuplicateNama(&L2);
